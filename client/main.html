@@ -1,0 +1,75 @@
+<head>
+    <title>Project1</title>
+</head>
+<body style="background-color:#FCFCFC;"  >
+  <div class="#594365">
+  <nav >
+   <div class="nav-wrapper" style="background-color:#594365;font-family:times-new-roman;">
+     <a href="#" class="brand-logo">&nbsp;&nbsp;&nbsp;The Market</a>
+     <ul id="nav-mobile" class="right hide-on-med-and-down">
+       <li><a href="#"><h5>Welcome to the online shopping</h5></a></li>
+
+     </ul>
+   </div>
+ </nav>
+ </div>
+</body>
+<template name="home">
+    <h3>Welcome to the Meteor application.</h3>
+</template>
+<template name="registers">
+    <h2>Register</h2>
+    <li> <a href="bhilai.html">click</a></li>
+</template>
+<template name="ulogin">
+    <h2></h2>
+</template>
+<template name="main">
+    {{#if currentUser}}
+    <MARQUEE WIDTH=1300 HEIGHT=50>
+    <h5 style="font-family:monotype-corsiva;">Here You Must see The Products City Wise!</h5>
+    </MARQUEE>
+
+    {{> dashboard}}
+    {{> cityName}}
+
+    {{> yield}}
+
+    {{else}}
+
+    {{> login}}
+    {{/if}}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <hr />
+
+    <p style="text-align:right;">Copyright &copy; <a href="codenicely.in">Codenicely.in</a>, 2017-2018.</p>
+
+</template>
+<template name="navigation">
+    <ul>
+<li><a href="{{pathFor route='home'}}">Home</a></li>
+        <li><a href="{{pathFor route='registers'}}">Register</a></li>
+        <li><a href="{{pathFor route='ulogin'}}">Login</a></li>
+        <li><a href="{{pathFor route='test'}}">Test</a></li>
+        <li><a href="{{pathFor route='test1'}}">Test1</a></li>
+        <li><a href="{{pathFor route='product'}}">Product</a></li>
+
+    </ul>
+      </template>
+    <template name="cityName">
+
+
+<!--
+      <div style="font-size:26px;font-family:monotype-corsiva">
+
+          <h2 style="color:green;margin-left:450px;">Select A City </h2>
+          <ul class="striped center" data-collapsible="accordion" style="margin-left:300px;margin-right:400px;">
+            <li> <div class="collection"><a href="{{pathFor route='product'}}" class="collection-item">Bilaspur</a></div></li>
+              <li><div class="collection"><a href="{{pathFor route='bhilai'}}" class="collection-item">Bhilai</a></div></li>
+              <li> <div class="collection"><a href="{{pathFor route='dhamtari'}}" class="collection-item">Dhamtari</a></div></li>
+              <li> <div class="collection"><a href="{{pathFor route='durg'}}" class="collection-item">Durg</a></div></li>
+              <li> <div class="collection"><a href="{{pathFor route='nandgaon'}}" class="collection-item">Rajnandgaon</a></div></li>
+              <li> <div class="collection"><a href="{{pathFor route='raipur'}}" class="collection-item">Raipur</a></div></li>
+
+          </ul>
+      </div>-->
+</template>

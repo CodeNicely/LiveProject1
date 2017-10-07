@@ -1,0 +1,86 @@
+<head>
+  <title>User Login</title>
+</head>
+<body>
+
+</body>
+<template name="register">
+    <h3>User Registration Page !!</h3>
+<form>
+<input type="text" id="email">
+<input type="password" id="password">
+<input type="submit" value="Register">
+</form>
+      </template>
+
+
+      <template name="login">
+
+        <main>
+  <center>
+    <div class="section"></div>
+
+    <h5 class="indigo-text">Please, Login To Manage</h5>
+    <div class="section"></div>
+
+    <div class="container">
+      <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+
+        <form class="col s12" method="post">
+          <div class='row'>
+            <div class='col s12'>
+            </div>
+          </div>
+
+          <div class='row'>
+            <div class='input-field col s12'>
+              <input type="text" id="login-email" required>
+              <label for='email'>Enter your email</label>
+            </div>
+          </div>
+
+          <div class='row'>
+            <div class='input-field col s12'>
+              <input type="password" id="login-password" required><br/><br/>
+              <label for='password'>Enter your password</label>
+            </div>
+            <label style='float: right;'>
+              <a class='pink-text' href='#!'><b>Forgot Password?</b></a>
+            </label>
+          </div>
+
+          <br />
+          <center>
+            <div class='row'>
+              <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Login</button>
+            </div>
+          </center>
+        </form>
+      </div>
+    </div>
+    <a href="!#">Create account</a>
+  </center>
+
+  <div class="section"></div>
+  <div class="section"></div>
+</main>
+
+            </template>
+            <template name="dashboard">
+
+              <p style="margin-left:1130px;">Click Here To <a href="#" class="logout">Logout</a></p>
+              <div class="fixed-action-btn verticle click-to-toggle"  style="margin-right:1200px;">
+                  <a class="btn-floating btn-large #603E66">
+                    <i class="material-icons">menu</i>
+                  </a>
+                  <ul>
+                    <li><a class=""><a href="{{pathFor route='product'}}" class="collection-item">Bilaspur</a></a></li>
+                    <li><a class=""><a href="{{pathFor route='bhilai'}}" class="collection-item">Bhilai</a></a></li>
+                    <li><a class=""><a href="{{pathFor route='dhamtari'}}" class="collection-item">dhamtari</a></a></li>
+                    <li><a class=""><a href="{{pathFor route='durg'}}" class="collection-item">Durg</a></a></li>
+                    <li><a class=""><a href="{{pathFor route='nandgaon'}}" class="collection-item">Rajnandgaon</a></a></li>
+                    <li><a class=""><a href="{{pathFor route='raipur'}}" class="collection-item">Raipur</a></a></li>
+                  </ul>
+                </div>
+
+          </template>
