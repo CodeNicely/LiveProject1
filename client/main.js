@@ -72,6 +72,7 @@ Template.add1.events({
     createdAt: new Date()
   });
 
+
   // clear form
 
   target.items.value = "";
@@ -94,7 +95,6 @@ Template.note1.events({
 
 
 //----------------Raipur-----------
-
 
 
 
